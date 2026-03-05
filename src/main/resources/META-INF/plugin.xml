@@ -1,0 +1,24 @@
+﻿<idea-plugin>
+    <id>com.eonvault.developer.utility</id>
+    <name>Eonvault Developer Utility</name>
+    <vendor>Eonvault</vendor>
+
+    <description><![CDATA[
+        Developer utility plugin for JSON/YAML conversion, validation, and log analysis.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action
+                id="eonvault.developer.utility.hello"
+                class="com.eonvault.developerutility.actions.DeveloperUtilityAction"
+                text="Eonvault Developer Utility"
+                description="Starter action for Eonvault Developer Utility plugin">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
