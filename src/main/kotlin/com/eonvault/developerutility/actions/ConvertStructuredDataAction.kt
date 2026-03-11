@@ -1,0 +1,5 @@
+package com.eonvault.developerutility.actions
+
+import com.eonvault.developerutility.commands.DeveloperUtilityCommandId
+
+class ConvertStructuredDataAction : DeveloperUtilityCommandAction(DeveloperUtilityCommandId.CONVERT_STRUCTURED_DATA)

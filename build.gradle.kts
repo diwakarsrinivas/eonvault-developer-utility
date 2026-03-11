@@ -75,6 +75,10 @@ tasks {
         finalizedBy(jacocoTestReport)
     }
 
+    buildPlugin {
+        dependsOn("check")
+    }
+
     jacocoTestReport {
         dependsOn(test)
         reports {

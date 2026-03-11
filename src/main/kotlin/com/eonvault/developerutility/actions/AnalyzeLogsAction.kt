@@ -1,0 +1,5 @@
+package com.eonvault.developerutility.actions
+
+import com.eonvault.developerutility.commands.DeveloperUtilityCommandId
+
+class AnalyzeLogsAction : DeveloperUtilityCommandAction(DeveloperUtilityCommandId.ANALYZE_LOGS)

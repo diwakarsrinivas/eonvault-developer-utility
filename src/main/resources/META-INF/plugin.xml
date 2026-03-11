@@ -10,15 +10,33 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup
+                id="eonvault.developer.utility.notifications"
+                displayType="BALLOON"
+                isLogByDefault="true"/>
     </extensions>
 
     <actions>
-        <action
-                id="eonvault.developer.utility.hello"
-                class="com.eonvault.developerutility.actions.DeveloperUtilityAction"
+        <group
+                id="eonvault.developer.utility.group"
                 text="Eonvault Developer Utility"
-                description="Starter action for Eonvault Developer Utility plugin">
+                description="Developer workflows for structured data and logs">
             <add-to-group group-id="ToolsMenu" anchor="last"/>
-        </action>
+            <action
+                    id="eonvault.developer.utility.convertStructuredData"
+                    class="com.eonvault.developerutility.actions.ConvertStructuredDataAction"
+                    text="Convert Structured Data"
+                    description="Run the structured data conversion workflow"/>
+            <action
+                    id="eonvault.developer.utility.validateStructuredData"
+                    class="com.eonvault.developerutility.actions.ValidateStructuredDataAction"
+                    text="Validate Structured Data"
+                    description="Run the structured data validation workflow"/>
+            <action
+                    id="eonvault.developer.utility.analyzeLogs"
+                    class="com.eonvault.developerutility.actions.AnalyzeLogsAction"
+                    text="Analyze Logs"
+                    description="Run the log analysis workflow"/>
+        </group>
     </actions>
 </idea-plugin>

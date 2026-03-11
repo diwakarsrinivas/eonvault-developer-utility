@@ -1,0 +1,5 @@
+package com.eonvault.developerutility.actions
+
+import com.eonvault.developerutility.commands.DeveloperUtilityCommandId
+
+class ValidateStructuredDataAction : DeveloperUtilityCommandAction(DeveloperUtilityCommandId.VALIDATE_STRUCTURED_DATA)
